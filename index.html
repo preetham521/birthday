@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday 🎉</title>
+<link rel="stylesheet" href="stylesh.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+  <h1 class="title">Happy Birthday My Dear Wife 🎂</h1>
+  <p class="subtitle">Click each photo to reveal a message 💝</p>
+
+  <div class="gallery">
+    <div class="photo-card" data-message="Thanks for coming into my life 💖">
+      <img src="sh-1.jpeg" alt="Photo 1">
+      <div class="message-box"><p></p></div>
+    </div>
+
+    <div class="photo-card" data-message="Let’s celebrate all your birthdays together forever 🎈">
+      <img src="sh-2.jpeg" alt="Photo 2">
+      <div class="message-box"><p></p></div>
+    </div>
+
+    <div class="photo-card" data-message="I’ll be with you till my last breath 💞">
+      <img src="sh-3.jpeg" alt="Photo 3">
+      <div class="message-box"><p></p></div>
+    </div>
+  </div>
+
+  <canvas id="heartsCanvas"></canvas>
+  <button class="btn" id="goNext">Next Surprise 🎁</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page hidden" id="page2">
+  <canvas id="floatingHeartsCanvas"></canvas>
+
+  <div class="card" id="card">
+    <h1 class="bday-title">Happy Birthday 🎉</h1>
+    <p class="bday-sub">You bring endless joy and love into my life ❤️</p>
+
+    <!-- Floating PS letters -->
+    <div class="floating-letters"></div>
+
+    <div class="controls">
+      <button class="btn" id="party">Celebrate Again 🎊</button>
+    </div>
+  </div>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
